@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shot-me/photo-print-dispatcher-acceptance-tests#readme",
   "dependencies": {
+    "mysql2": "^2.0.2",
     "sequelize": "^5.21.2"
   }
 }
