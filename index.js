@@ -33,8 +33,6 @@ async function timer(seconds) {
     }
 }
 
-
-
 (async function() {
     await timeout(1000)
     console.log('\nThis test should check if the printer will print a new photo')
@@ -45,13 +43,13 @@ async function timer(seconds) {
     console.log('Adding a new photos to the db')
     await createNewPhoto()
     await showNrOfPhotosToPrint()
-    console.log('Waiting 3 seconds, after this time, we should have all photos printed! (with datePrinted !== null)')
-    await timer(3)
+    const waitSeconds = 10
+    console.log('Waiting ' + waitSeconds + ' seconds, after this time, we should have all photos printed! (with datePrinted !== null)')
+    await timer(waitSeconds)
     if (await getNrOfPhotosToPrint() > 0) {
         console.log('TEST FAILED')
         console.log('We stille have ' + await getNrOfPhotosToPrint() + ' photos to print')
     } else {
         console.log('TEST PASSED')
     }
-
 })()
