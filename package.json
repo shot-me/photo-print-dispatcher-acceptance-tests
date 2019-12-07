@@ -1,0 +1,22 @@
+{
+  "name": "photo-print-dispatcher-acceptance-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shot-me/photo-print-dispatcher-acceptance-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shot-me/photo-print-dispatcher-acceptance-tests/issues"
+  },
+  "homepage": "https://github.com/shot-me/photo-print-dispatcher-acceptance-tests#readme",
+  "dependencies": {
+    "sequelize": "^5.21.2"
+  }
+}
